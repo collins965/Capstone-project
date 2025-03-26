@@ -4,126 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanguard Wealth Markets</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-
    
-<!-- Navbar -->
-<nav class="bg-black shadow-md fixed top-0 left-0 w-full z-50">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-            <!-- Logo Only -->
-            <div class="flex items-center">
-                <img src="Assets/Vanguard Wealth Markets logo.webp" 
-                     alt="Vanguard Wealth Markets Logo" 
-                     class="h-12 w-auto">
-            </div>
+
+  <!-- Navbar -->
+<nav class="bg-black text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Left Section: Logo -->
+        <div class="flex items-center space-x-3">
+            <img src="Assets/Vanguard Wealth Markets logo.webp" alt="Logo" class="h-10 w-auto">
+        </div>
 
             <!-- Navigation Links -->
-            <ul class="md:flex text-white space-x-6 justify-start">
-                <!-- Investment Plans -->
-                <li class="relative group">
-                    <a href="#investment-plans" class="hover:text-red-500 block">Investment Plans</a>
-                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50 text-left">
-                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#stocks">Stocks</a></li>
-                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#bonds">Bonds</a></li>
-                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#realestate">Real Estate</a></li>
-                    </ul>
-                </li>
-            
-                <!-- Market Insights -->
-                <li class="relative group">
-                    <a href="#market-insights" class="hover:text-red-500 block">Market Insights</a>
-                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50 text-left">
-                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#trends">Trends</a></li>
-                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#reports">Reports</a></li>
-                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#analysis">Analysis</a></li>
-                    </ul>
-                </li>
-            
+            <ul class="flex text-white space-x-6">
                 <!-- About Us -->
                 <li class="relative group">
                     <a href="#about-us" class="hover:text-red-500 block">About Us</a>
-                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50 text-left">
+                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50">
                         <li class="px-4 py-2 hover:bg-gray-200"><a href="#team">Our Team</a></li>
                         <li class="px-4 py-2 hover:bg-gray-200"><a href="#mission">Mission</a></li>
                         <li class="px-4 py-2 hover:bg-gray-200"><a href="#history">History</a></li>
                     </ul>
                 </li>
-            
+
+                <!-- Investment Plans -->
+                <li class="relative group">
+                    <a href="#investment-plans" class="hover:text-red-500 block">Investment Plans</a>
+                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50">
+                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#stocks">Stocks</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#bonds">Bonds</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#realestate">Real Estate</a></li>
+                    </ul>
+                </li>
+
+                <!-- Market Insights -->
+                <li class="relative group">
+                    <a href="#market-insights" class="hover:text-red-500 block">Market Insights</a>
+                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-56 top-full left-0 z-50">
+                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#economic-trends">Economic Trends</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#stock-reports">Stock Reports</a></li>
+                        <li class="px-4 py-2 hover:bg-gray-200"><a href="#crypto-updates">Crypto Market Updates</a></li>
+                    </ul>
+                </li>
+
                 <!-- Contact -->
                 <li class="relative group">
-                    <a href="#contact" class="text-white hover:text-red-500 block">Contact us</a>
-                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50 text-left">
+                    <a href="#contact" class="hover:text-red-500 block">Contact Us</a>
+                    <ul class="absolute hidden group-hover:block bg-white text-black shadow-md mt-2 rounded-md w-48 top-full left-0 z-50">
                         <li class="px-4 py-2 hover:bg-gray-200"><a href="#email">Email</a></li>
                         <li class="px-4 py-2 hover:bg-gray-200"><a href="#phone">Phone</a></li>
                         <li class="px-4 py-2 hover:bg-gray-200"><a href="#address">Address</a></li>
                     </ul>
                 </li>
             </ul>
-            
-             <!-- Invest -->
-             <li class="relative group">
-                <a href="#invest" class="text-white hover:text-red-500 block">Invest</a>
-                <div class="absolute left-0 hidden bg-white text-black w-48 mt-2 shadow-md rounded-md group-hover:block">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Stocks</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Bonds</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Mutual Funds</a>
-                </div>
-            </li>
-
-            <!-- Borrow -->
-            <li class="relative group">
-                <a href="#borrow" class="text-white hover:text-red-500 block">Borrow</a>
-                <div class="absolute left-0 hidden bg-white text-black w-48 mt-2 shadow-md rounded-md group-hover:block">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Personal Loans</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Business Loans</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Mortgage</a>
-                </div>
-            </li>
-
-            <!-- Accounts -->
-            <li class="relative group">
-                <a href="#Accounts" class="text-white hover:text-red-500 block">Accounts</a>
-                <div class="absolute left-0 hidden bg-white text-black w-48 mt-2 shadow-md rounded-md group-hover:block">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Savings</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Checking</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Retirement</a>
-                </div>
-            </li>
-
-            <!-- Deposits -->
-            <li class="relative group">
-                <a href="#deposits" class="text-white hover:text-red-500 block">Deposits</a>
-                <div class="absolute left-0 hidden bg-white text-black w-48 mt-2 shadow-md rounded-md group-hover:block">
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Fixed Deposits</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">Recurring Deposits</a>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-200">High-Yield Accounts</a>
-                </div>
-            </li>
-        </ul>
 
             <!-- Authentication Buttons -->
             <div class="space-x-4">
-                <button id="loginBtn" class="bg-[#FFD700] text-white px-4 py-2 rounded-md font-bold hover:bg-red-500">
-                    Sign up
-                </button>
+                <a href="signup.html" class="bg-[#FFD700] text-white px-4 py-2 rounded hover:bg-red-500">
+                    Sign Up
+                </a>                
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="relative">
+    <section class="relative pt-16">
         <img src="Assets/pexels-alesiakozik-6770611.jpg" alt="Stock Market Growth" class="w-full h-96 object-cover">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center space-y-4">
             <h2 class="text-3xl text-[#FFD700] font-bold">Vanguard Wealth Markets</h2>
             <p class="text-xl text-[#FFD700] font-semibold">Investment opportunities tailored to your goals</p>
         </div>
-    </section>
+    </section>>
 
-   <!-- About Us Section -->
 <!-- About Us Section -->
 <section id="about-us" class="py-16 relative bg-cover bg-center" 
     style="background-image: url('Assets/pexels-karolina-grabowska-5980577.jpg');">
@@ -173,206 +128,262 @@
 </section>
 
 
+    <!-- Investment Plan Card -->
+    <section id="investment-plans" class="py-16 relative bg-gray-100">
+        <!-- Content -->
+        <div class="relative z-10 text-gray-900 p-8">
+            <h2 class="text-3xl text-[#FFD700] text-center font-bold">Investment Plans</h2>
+            <p class="mt-4">Explore strategic opportunities to grow your wealth with Vanguard Wealth Markets.</p>
+        </div>
+            <p class="text-gray-700 text-lg mb-2">
+            <p class="text-sm mt-1">Secure & High-Yield Investments for a Prosperous Future</p>
+        </div>
 
-<!-- Market Insights Section -->
-<section id="market-insights" class="relative p-8">
-    <!-- Background Image with Reduced Opacity -->
-    <div class="absolute inset-0 opacity-60 bg-cover bg-center"
-         style="background-image: url('Assets/pexels-john-guccione-www-advergroup-com-1874301-3483098.jpg');">
+        <!-- Investment Plan Details -->
+        <div class="p-6 space-y-6">
+            <!-- Plan 1: Fixed Income -->
+            <div class="border-b pb-4">
+                <h3 class="text-lg font-bold text-gray-900">🔹 Fixed Income Plan</h3>
+                <p class="text-gray-700 mt-2 text-sm">
+                    The Fixed Income Plan is designed for investors seeking stability and guaranteed returns. It offers a **low-risk**, steady return on investment with interest paid quarterly.
+                </p>
+                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
+                    <li>📈 Expected Annual Return: **7% - 10%**</li>
+                    <li>⏳ Investment Tenure: **1 - 5 Years**</li>
+                    <li>🛡️ Risk Level: **Low**</li>
+                    <li>💰 Minimum Investment: **$5,000**</li>
+                </ul>
+            </div>
+
+            <!-- Plan 2: Growth Fund -->
+            <div class="border-b pb-4">
+                <h3 class="text-lg font-bold text-gray-900">🔹 Growth Fund Plan</h3>
+                <p class="text-gray-700 mt-2 text-sm">
+                    The Growth Fund focuses on capital appreciation, making it ideal for investors looking for long-term wealth growth. This plan has **moderate risk** with high potential returns.
+                </p>
+                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
+                    <li>📈 Expected Annual Return: **12% - 18%**</li>
+                    <li>⏳ Investment Tenure: **3 - 7 Years**</li>
+                    <li>🛡️ Risk Level: **Moderate**</li>
+                    <li>💰 Minimum Investment: **$10,000**</li>
+                </ul>
+            </div>
+
+            <!-- Plan 3: High-Yield Market Fund -->
+            <div class="border-b pb-4">
+                <h3 class="text-lg font-bold text-gray-900">🔹 High-Yield Market Fund</h3>
+                <p class="text-gray-700 mt-2 text-sm">
+                    This plan is for investors with **high risk tolerance**, focusing on market-driven opportunities like stocks, commodities, and venture capital. Ideal for maximizing long-term gains.
+                </p>
+                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
+                    <li>📈 Expected Annual Return: **20% - 30%**</li>
+                    <li>⏳ Investment Tenure: **5 - 10 Years**</li>
+                    <li>🛡️ Risk Level: **High**</li>
+                    <li>💰 Minimum Investment: **$25,000**</li>
+                </ul>
+            </div>
+
+            <!-- Plan 4: Retirement Security Plan -->
+            <div>
+                <h3 class="text-lg font-bold text-gray-900">🔹 Retirement Security Plan</h3>
+                <p class="text-gray-700 mt-2 text-sm">
+                    Our **Retirement Security Plan** provides long-term security with strategic asset allocation, ensuring financial independence in later years. It is **low-risk** and offers stable returns.
+                </p>
+                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
+                    <li>📈 Expected Annual Return: **6% - 9%**</li>
+                    <li>⏳ Investment Tenure: **10+ Years**</li>
+                    <li>🛡️ Risk Level: **Low to Moderate**</li>
+                    <li>💰 Minimum Investment: **$3,000**</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <!-- Call to Action -->
+        <div class="bg-gray-800 p-6 text-center">
+            <p class="text-white font-semibold text-sm">
+                Start investing with **Vanguard Wealth Markets** today and build a future of financial security!
+            </p>
+            <a href="#" class="mt-4 inline-block bg-[#FFD700] text-black py-2 px-6 rounded-full text-sm font-semibold transition hover:bg-red-500">
+                Invest Now
+            </a>
+        </div>
     </div>
 
-    <!-- Content Box -->
-    <div class="relative z-10 bg-white bg-opacity-80 shadow-lg max-w-3xl mx-auto p-6 rounded-lg text-center">
-        <h3 class="text-2xl font-bold text-blue-900">Latest Market Insights</h3>
-        <p class="text-gray-900">Explore financial trends, stock movements, and economic indicators.</p>
 
-        <!-- View Insights Button -->
+    <!-- Market Insights Card -->
+    <section id="market-insights" class="py-16 relative bg-cover bg-center" >
+        <!-- Title & Date -->
+        <div class="flex justify-between items-center border-b pb-4">
+            <h2 class="text-xl md:text-2xl font-bold text-[#FFD700]">
+                Market Insights
+            </h2>
+            <span class="text-gray-500 text-sm">March 2025</span>
+        </div>
+
+        <!-- Featured Insights -->
         <div class="mt-4">
-            <button id="viewInsightsBtn" class="bg-[#FFD700] text-black px-6 py-3 rounded-md hover:bg-red-500 transition">
-                View Insights
-            </button>
+            <h3 class="text-lg md:text-xl font-semibold text-blue-600">
+                Market Performance & Economic Outlook
+            </h3>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-2">
+                Global financial markets continue to experience volatility amid ongoing economic uncertainty. The **S&P 500** has shown resilience, closing at 4,750 points, marking a **3.2% increase** in Q1. Meanwhile, the **Federal Reserve's stance on interest rates remains cautious**, with analysts predicting a potential rate cut in the latter half of the year.
+            </p>
         </div>
-    </div>
-</section>
 
-
-<!-- Investment Plans Section -->
-<section id="investment-plans" class="relative p-8">
-    <!-- Background Image with Reduced Opacity -->
-    <div class="relative w-full h-64">
-        <!-- Background Image with Opacity -->
-        <div class="absolute inset-0 opacity-60"
-            style="background: url('Assets/pexels-john-guccione-www-advergroup-com-1874301-3483098.jpg') center/cover no-repeat;">
-        </div>
-    
-        <!-- Button & Dropdown -->
-        <div class="absolute inset-0 flex flex-col justify-center items-center z-10">
-            <button id="investmentplansBtn" class="bg-[#FFD700] text-black px-4 py-2 rounded-md hover:bg-red-500">
-                View Insights
-            </button>
-    
-            <!-- Dropdown Menu -->
-            <ul id="investmentplansMenu"
-                class="absolute left-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg hidden">
-                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer" onclick="showPlan('stocks')">Trends</li>
-                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer" onclick="showPlan('bonds')">Reports</li>
-                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer" onclick="showPlan('realestate')">Analysis</li>
+        <!-- Market Data -->
+        <div class="bg-gray-50 p-4 rounded-lg mt-4">
+            <h3 class="text-lg font-semibold text-gray-800">Key Market Metrics</h3>
+            <ul class="mt-2 space-y-2 text-gray-700">
+                <li><strong>📈 S&P 500:</strong> 4,750 (+3.2% Q1 Growth)</li>
+                <li><strong>🏦 Fed Interest Rate:</strong> 5.25% (No Change Expected in Q2)</li>
+                <li><strong>💰 Gold Prices:</strong> $2,050/oz (+5% YTD)</li>
+                <li><strong>🛢 Crude Oil:</strong> $83/barrel (-2.1% WTD)</li>
+                <li><strong>💵 Forex (USD/EUR):</strong> 1.08 (-0.5% MTD)</li>
             </ul>
         </div>
 
-    <!-- Content Box -->
-    <div class="relative z-10 bg-white bg-opacity-80 shadow-lg max-w-3xl mx-auto p-6 rounded-lg">
-        <h3 class="text-2xl font-bold text-center text-blue-900">Investment Plans</h3>
-        <p class="text-gray-900 text-center">Secure your financial future with diverse investment options.</p>
-
-        <div class="relative mt-4">
-            <button id="investmentDropdownBtn" class="w-full bg-[#FFD700] text-black px-4 py-2 rounded-md hover:bg-red-500">
-                Choose Investment Plan
-            </button>
-            <ul id="investmentDropdownMenu" class="absolute left-0 w-full bg-white border border-gray-300 rounded-lg shadow-lg hidden">
-                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer" onclick="showPlan('stocks')">Stocks</li>
-                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer" onclick="showPlan('bonds')">Bonds</li>
-                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer" onclick="showPlan('realestate')">Real Estate</li>
-            </ul>
+        <!-- Investment Insights -->
+        <div class="mt-4">
+            <h3 class="text-lg md:text-xl font-semibold text-green-700">
+                Investment Strategies for 2025
+            </h3>
+            <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-2">
+                As market conditions evolve, **Vanguard Wealth Markets** recommends a diversified investment approach. Fixed-income assets remain attractive, particularly in **government bonds** and **high-yield corporate bonds**. **Emerging market equities** continue to show potential, with China and India leading growth. Investors are advised to **monitor inflation trends** and consider **hedging strategies** against currency fluctuations.
+            </p>
         </div>
 
-        <div id="investment-details" class="mt-6 text-gray-900">
-            <div id="stocks" class="hidden">
-                <h4 class="text-xl font-semibold">Stock Investments</h4>
-                <p>High returns with market risks.</p>
-            </div>
-            <div id="bonds" class="hidden">
-                <h4 class="text-xl font-semibold">Bonds & Fixed Income</h4>
-                <p>Stable income with low risk.</p>
-            </div>
-            <div id="realestate" class="hidden">
-                <h4 class="text-xl font-semibold">Real Estate</h4>
-                <p>Tangible investment with long-term appreciation.</p>
-            </div>
+        <!-- CTA -->
+        <div class="mt-6">
+            <a href="#" class="block bg-[#FFD700] hover:bg-red-500 text-black text-center font-semibold py-3 px-6 rounded-md transition">
+                Read Full Report
+            </a>
         </div>
     </div>
+    </section>
+
+ <!-- Contact Info -->
+
+ <section id="contact-us" class="py-16 relative bg-cover bg-center" 
+    style="background-image: url('Assets/pexels-joenibraw-1416530.jpg');">
+    
+    <!-- Overlay to Reduce Background Opacity -->
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div> <!-- Reduced from 50 to 30 -->
+<!-- Contact Card -->
+<div class="relative z-10 max-w-lg mx-auto bg-white bg-opacity-90 p-8 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold text-blue-900">Our Office</h2>
+    <p class="mt-2 text-gray-600">1234 Kimathi Street, Nairobi, Na10001</p>
+    <p class="mt-2 text-gray-600">📞 <strong>0755901372</strong></p>
+    <p class="mt-2 text-gray-600">📧 <strong>contact@vanguardwealth.com</strong></p>
+    <p class="mt-4">Follow us on:</p>
+    <div class="flex space-x-4 mt-2">
+        <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+        <a href="#" class="text-blue-500 hover:text-blue-700">Twitter</a>
+    </div>
+</div>
 </section>
 
+<!-- Contact Section -->
+<section id="contact" class="py-16 flex justify-center px-4 relative bg-cover bg-center"
+    style="background-image: url('Assets/pexels-christina99999-31310637.jpg');">
+    
+    <!-- Overlay to Reduce Background Opacity -->
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div> <!-- Adjusted to 30% opacity -->
 
-    <!-- Contact Section -->
-<section class="relative py-16">
-    <!-- Background Image with Reduced Opacity -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-50"
-         style="background-image: url('Assets/pexels-joenibraw-1416530.jpg');">
-    </div>
+    <!-- Contact Form Card (Now More Opaque) -->
+    <div class="w-full max-w-lg bg-white bg-opacity-100 p-8 rounded-lg shadow-lg mt-12 relative z-10">  
+        <h2 class="text-2xl font-bold text-blue-900 text-center">Send Us a Message</h2>
+        <form action="#" method="POST" class="mt-4">
+            <label class="block text-gray-700">Full Name</label>
+            <input type="text" name="name" class="w-full p-3 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Input name" required>
 
-    <!-- Contact Section -->
-<section class="relative py-16">
-    <!-- Background Image with Increased Opacity -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-70"
-         style="background-image: url('Assets/pexels-joenibraw-1416530.jpg');">
-    </div>
+            <label class="block text-gray-700 mt-4">Email</label>
+            <input type="email" name="email" class="w-full p-3 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com" required>
 
-    <!-- Contact Form Container -->
-    <div class="relative z-10 bg-white bg-opacity-80 shadow-lg rounded-lg p-6 border border-gray-300 max-w-3xl mx-auto">
-        <h3 class="text-2xl font-bold text-blue-500 mb-4 text-center">Contact Us</h3>
-        <p class="text-black text-md text-center mb-6">Have questions or need assistance? Send us a message and we'll get back to you as soon as possible.</p>
+            <label class="block text-gray-700 mt-4">Message</label>
+            <textarea name="message" class="w-full p-3 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Your message..." required></textarea>
 
-        <!-- Contact Form -->
-        <form action="#" method="POST" class="space-y-4">
-            <!-- Name Field -->
-            <div>
-                <label for="name" class="block text-black font-medium">Full Name</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your full name"
-                       class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FFD700] focus:outline-none text-black placeholder-gray-600">
-            </div>
-
-            <!-- Email Field -->
-            <div>
-                <label for="email" class="block text-black font-medium">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email"
-                       class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FFD700] focus:outline-none text-black placeholder-gray-600">
-            </div>
-
-            <!-- Message Field -->
-            <div>
-                <label for="message" class="block text-black font-medium">Your Message</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Type your message here..."
-                          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#FFD700] focus:outline-none text-black placeholder-gray-600"></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit"
-                    class="w-full bg-[#FFD700] text-black px-4 py-2 rounded-md hover:bg-red-500 transition duration-300">
+            <button type="submit" class="w-full bg-[#FFD700] text-black p-3 mt-4 rounded hover:bg-red-500 transition">
                 Send Message
             </button>
         </form>
     </div>
 </section>
-</section>
 
 
-<!-- Swiper Section with Background Image -->
-<section class="relative py-16 bg-cover bg-center"
-    style="background-image: url('Assets/pexels-christina99999-31310637.jpg');">
-    
-    <!-- Overlay to Reduce Background Opacity -->
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-    <!-- Swiper Container -->
-    <div class="swiper mySwiper w-full max-w-5xl mx-auto mt-6 rounded-lg overflow-hidden relative z-10">
-        <div class="swiper-wrapper">
-
-            <!-- Slide 1 -->
-            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
-                <div class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 text-center border border-gray-200 w-4/5 md:w-2/3">
-                    <p class="testimonial text-gray-800 italic">"Vanguard Wealth Markets has transformed my financial future! Their expert advisors provided me with a tailored investment strategy that exceeded my expectations. I feel confident and secure about my retirement planning!"</p>
-                    <h3 class="customer font-bold text-[#FFD700] mt-4">- Peter Waweru</h3>
+                <!-- Review 1 -->
+                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic">"Vanguard Wealth Markets has transformed my investment portfolio. I’ve seen real growth!"</p>
+                    <div class="mt-4 flex items-center space-x-3">
+                        <div>
+                            <p class="text-blue-700 font-semibold">Joseph Mwangi</p>
+                            <p class="text-sm text-gray-500">Nairobi, Kenya</p>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Review 2 -->
+                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic">"A very professional team that truly understands the financial market. Highly recommended!"</p>
+                    <div class="mt-4 flex items-center space-x-3">
+                        <div>
+                            <p class="text-blue-700 font-semibold">Wanjiku Kamau</p>
+                            <p class="text-sm text-gray-500">Mombasa, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic">"The best investment guidance I have received. I now have confidence in my financial future."</p>
+                    <div class="mt-4 flex items-center space-x-3">
+                        <div>
+                            <p class="text-blue-700 font-semibold">Brian Otieno</p>
+                            <p class="text-sm text-gray-500">Kisumu, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 italic">"Vanguard Wealth Markets is the real deal. Honest, insightful, and excellent service!"</p>
+                    <div class="mt-4 flex items-center space-x-3">
+                        <div>
+                            <p class="text-blue-700 font-semibold">Akinyi Mutua</p>
+                            <p class="text-sm text-gray-500">Eldoret, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Slide 2 (Alternate) -->
-            <div class="swiper-slide flex flex-col md:flex-row-reverse items-center justify-center">
-                <div class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 text-center border border-gray-200 w-4/5 md:w-2/3">
-                    <p class="testimonial text-gray-800 italic">"I was new to investing and had no idea where to start. Vanguard’s team patiently guided me through every step, ensuring I understood my options. Now, my portfolio is growing steadily, and I couldn't be happier!"</p>
-                    <h3 class="customer font-bold text-[#FFD700] mt-4">- Bradly Xavier</h3>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
-                <div class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 text-center border border-gray-200 w-4/5 md:w-2/3">
-                    <p class="testimonial text-gray-800 italic">"Exceptional service! Vanguard Wealth Markets helped me diversify my investments, reducing my risks while maximizing returns. Their insights into global markets are truly invaluable!"</p>
-                    <h3 class="customer font-bold text-[#FFD700] mt-4">- Sarah Wanjiru</h3>
-                </div>
-            </div>
-
-            <!-- Slide 4 (Alternate) -->
-            <div class="swiper-slide flex flex-col md:flex-row-reverse items-center justify-center">
-                <div class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 text-center border border-gray-200 w-4/5 md:w-2/3">
-                    <p class="testimonial text-gray-800 italic">"I’ve worked with several financial firms before, but Vanguard Wealth Markets stands out. Their customer-first approach, transparency, and in-depth market knowledge make them my trusted financial partner."</p>
-                    <h3 class="customer font-bold text-[#FFD700] mt-4">- James Kimani</h3>
-                </div>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="swiper-slide flex flex-col md:flex-row items-center justify-center">
-                <div class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 text-center border border-gray-200 w-4/5 md:w-2/3">
-                    <p class="testimonial text-gray-800 italic">"Thanks to Vanguard, I finally have peace of mind regarding my family’s financial future. Their innovative solutions and commitment to my goals make them the best in the business!"</p>
-                    <h3 class="customer font-bold text-[#FFD700] mt-4">- Olivia Anyango</h3>
-                </div>
-            </div>
-
-            <!-- Slide 6 (Alternate) -->
-            <div class="swiper-slide flex flex-col md:flex-row-reverse items-center justify-center">
-                <div class="bg-white bg-opacity-90 shadow-lg rounded-lg p-6 text-center border border-gray-200 w-4/5 md:w-2/3">
-                    <p class="testimonial text-gray-800 italic">"I never realized how important financial planning was until I met the Vanguard team. Their expert guidance has helped me make informed decisions, leading to incredible growth in my investments!"</p>
-                    <h3 class="customer font-bold text-[#FFD700] mt-4">- Robert Kiprono</h3>
-                </div>
-            </div>
+            <!-- Pagination & Navigation -->
+            <div class="swiper-pagination mt-4"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-
-        <!-- Swiper Pagination and Navigation -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
     </div>
-</section>
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
 
 <!-- Footer -->
 <footer class="relative bg-black text-white py-10 mt-10">
@@ -414,35 +425,28 @@
                     <a href="tel:+18005550123" class="hover:text-red-500">0755901372</a>
                 </p>
             </div>
-
-            <!-- Social Media -->
-            <div class="flex-grow">
-                <h3 class="font-bold text-blue-500">Follow Us</h3>
-                <div class="flex space-x-4 mt-2">
-                    <a href="https://www.facebook.com/vanguardmarkets" class="text-gray-400 hover:text-blue-500">
-                        <i class="fab fa-facebook text-2xl"></i>
-                    </a>
-                    <a href="https://twitter.com/vanguardmarkets" class="text-gray-400 hover:text-blue-300">
-                        <i class="fab fa-twitter text-2xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/vanguardmarkets" class="text-gray-400 hover:text-blue-700">
-                        <i class="fab fa-linkedin text-2xl"></i>
-                    </a>
-                    <a href="https://www.instagram.com/vanguardmarkets" class="text-gray-400 hover:text-pink-500">
-                        <i class="fab fa-instagram text-2xl"></i>
-                    </a>
-                    <a href="https://www.youtube.com/c/vanguardmarkets" class="text-gray-400 hover:text-red-500">
-                        <i class="fab fa-youtube text-2xl"></i>
-                    </a>
-                </div>
-            </div>
+<!-- social media -->
+            <a href="https://www.facebook.com/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+                <i class="fab fa-facebook text-2xl"></i>facebook
+            </a>
+            <a href="https://twitter.com/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+                <i class="fab fa-twitter text-2xl"></i>twitter
+            </a>
+            <a href="https://www.linkedin.com/company/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+                <i class="fab fa-linkedin text-2xl"></i>linked in
+            </a>
+            <a href="https://www.instagram.com/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+                <i class="fab fa-instagram text-2xl"></i>instagram
+            </a>
+            <a href="https://www.youtube.com/c/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+                <i class="fab fa-youtube text-2xl"></i>youtube
+            </a>
         </div>
     </div>
 </footer>
 
-
-<!-- FontAwesome for social media icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
