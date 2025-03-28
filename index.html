@@ -12,10 +12,25 @@
 <!-- Navbar -->
 <nav class="bg-black text-white fixed top-0 left-0 w-full z-50 shadow-lg">
     <div class="container mx-auto flex items-center justify-between p-4 flex-wrap">
-       
-        <!-- Left Section: Logo -->
+
+        <!-- Left Section: Logo and Hamburger Menu -->
         <div class="flex items-center">
             <img src="Assets/Vanguard Wealth Markets logo.webp" alt="Logo" class="h-10 w-auto">
+            
+            <!-- Hamburger Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none ml-4">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden w-full mt-4 md:hidden">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="#about-us" class="hover:text-red-500 block">About Us</a></li>
+                <li><a href="#investment-plans" class="hover:text-red-500 block">Investment Plans</a></li>
+                <li><a href="#market-insights" class="hover:text-red-500 block">Market Insights</a></li>
+                <li><a href="#contact" class="hover:text-red-500 block">Contact Us</a></li>
+            </ul>
         </div>
 
         <!-- Center Section: Navigation Links (Hidden in Small Screens) -->
@@ -63,27 +78,22 @@
             </ul>
         </div>
 
-        <!-- Right Section: Authentication Buttons -->
-        <div class="ml-auto">
-            <a href="signup.html" class="bg-[#FFD700] text-black px-4 py-2 rounded hover:bg-red-500">
-                Sign Up
-            </a>
-        </div>
+ <!-- Right Section: Authentication Buttons -->
+<div class="flex space-x-4"> 
+    <!-- Account button -->
+    <a href="account.html" class="bg-[#FFD700] text-black px-4 py-2 rounded hover:bg-red-500">
+        My account
+    </a>
 
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="md:hidden ml-auto text-white focus:outline-none">
-            ☰
-        </button>
+    <!-- Sign Up button -->
+    <a href="signup.html" class="bg-[#FFD700] text-black px-4 py-2 rounded hover:bg-red-500">
+        Sign Up
+    </a>
+</div>
 
-        <!-- Mobile Navigation Menu (Hidden by Default) -->
-        <div id="mobile-menu" class="hidden w-full mt-4 md:hidden">
-            <ul class="flex flex-col items-center space-y-4">
-                <li><a href="#about-us" class="hover:text-red-500 block">About Us</a></li>
-                <li><a href="#investment-plans" class="hover:text-red-500 block">Investment Plans</a></li>
-                <li><a href="#market-insights" class="hover:text-red-500 block">Market Insights</a></li>
-                <li><a href="#contact" class="hover:text-red-500 block">Contact Us</a></li>
-            </ul>
-        </div>
+
+
+    </div>
     </div>
 </nav>
 
@@ -174,10 +184,10 @@
                     The Fixed Income Plan is designed for investors seeking stability and guaranteed returns. It offers a **low-risk**, steady return on investment with interest paid quarterly.
                 </p>
                 <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: **7% - 10%**</li>
-                    <li>⏳ Investment Tenure: **1 - 5 Years**</li>
-                    <li>🛡️ Risk Level: **Low**</li>
-                    <li>💰 Minimum Investment: **$5,000**</li>
+                    <li>📈 Expected Annual Return: 7% - 10%</li>
+                    <li>⏳ Investment Tenure: 1 - 5 Years</li>
+                    <li>🛡️ Risk Level: Low</li>
+                    <li>💰 Minimum Investment: $5,000</li>
                 </ul>
             </div>
 
@@ -188,10 +198,10 @@
                     The Growth Fund focuses on capital appreciation, making it ideal for investors looking for long-term wealth growth. This plan has **moderate risk** with high potential returns.
                 </p>
                 <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: **12% - 18%**</li>
-                    <li>⏳ Investment Tenure: **3 - 7 Years**</li>
-                    <li>🛡️ Risk Level: **Moderate**</li>
-                    <li>💰 Minimum Investment: **$10,000**</li>
+                    <li>📈 Expected Annual Return: 12% - 18%</li>
+                    <li>⏳ Investment Tenure: 3 - 7 Years</li>
+                    <li>🛡️ Risk Level: Moderate</li>
+                    <li>💰 Minimum Investment: $10,000</li>
                 </ul>
             </div>
 
@@ -202,10 +212,10 @@
                     This plan is for investors with **high risk tolerance**, focusing on market-driven opportunities like stocks, commodities, and venture capital. Ideal for maximizing long-term gains.
                 </p>
                 <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: **20% - 30%**</li>
-                    <li>⏳ Investment Tenure: **5 - 10 Years**</li>
-                    <li>🛡️ Risk Level: **High**</li>
-                    <li>💰 Minimum Investment: **$25,000**</li>
+                    <li>📈 Expected Annual Return: 20% - 30%</li>
+                    <li>⏳ Investment Tenure: 5 - 10 Years</li>
+                    <li>🛡️ Risk Level: High</li>
+                    <li>💰 Minimum Investment: $25,000</li>
                 </ul>
             </div>
 
@@ -216,24 +226,24 @@
                     Our **Retirement Security Plan** provides long-term security with strategic asset allocation, ensuring financial independence in later years. It is **low-risk** and offers stable returns.
                 </p>
                 <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: **6% - 9%**</li>
-                    <li>⏳ Investment Tenure: **10+ Years**</li>
-                    <li>🛡️ Risk Level: **Low to Moderate**</li>
-                    <li>💰 Minimum Investment: **$3,000**</li>
+                    <li>📈 Expected Annual Return: 6% - 9%</li>
+                    <li>⏳ Investment Tenure: 10+ Years</li>
+                    <li>🛡️ Risk Level: Low to Moderate</li>
+                    <li>💰 Minimum Investment: $3,000</li>
                 </ul>
             </div>
         </div>
         </section>
+<!-- Call to Action -->
+<div class="bg-gray-800 p-6 text-center">
+    <p class="text-white font-semibold text-sm">
+        Start investing with <strong>Vanguard Wealth Markets</strong> today and build a future of financial security!
+    </p>
+    <a href="invest-now.html" class="mt-4 inline-block bg-[#FFD700] text-black py-2 px-6 rounded-full text-sm font-semibold transition hover:bg-red-500">
+        Invest Now
+    </a>
+</div>
 
-        <!-- Call to Action -->
-        <div class="bg-gray-800 p-6 text-center">
-            <p class="text-white font-semibold text-sm">
-                Start investing with **Vanguard Wealth Markets** today and build a future of financial security!
-            </p>
-            <a href="#" class="mt-4 inline-block bg-[#FFD700] text-black py-2 px-6 rounded-full text-sm font-semibold transition hover:bg-red-500">
-                Invest Now
-            </a>
-        </div>
     </div>
 
 
@@ -261,11 +271,11 @@
         <div class="bg-gray-50 p-4 rounded-lg mt-4">
             <h3 class="text-lg font-semibold text-gray-800">Key Market Metrics</h3>
             <ul class="mt-2 space-y-2 text-gray-700">
-                <li><strong>📈 S&P 500:</strong> 4,750 (+3.2% Q1 Growth)</li>
-                <li><strong>🏦 Fed Interest Rate:</strong> 5.25% (No Change Expected in Q2)</li>
-                <li><strong>💰 Gold Prices:</strong> $2,050/oz (+5% YTD)</li>
-                <li><strong>🛢 Crude Oil:</strong> $83/barrel (-2.1% WTD)</li>
-                <li><strong>💵 Forex (USD/EUR):</strong> 1.08 (-0.5% MTD)</li>
+                <li><strong> S&P 500:</strong> 4,750 (+3.2% Q1 Growth)</li>
+                <li><strong> Fed Interest Rate:</strong> 5.25% (No Change Expected in Q2)</li>
+                <li><strong> Gold Prices:</strong> $2,050/oz (+5% YTD)</li>
+                <li><strong> Crude Oil:</strong> $83/barrel (-2.1% WTD)</li>
+                <li><strong> Forex (USD/EUR):</strong> 1.08 (-0.5% MTD)</li>
             </ul>
         </div>
 
@@ -279,12 +289,13 @@
             </p>
         </div>
 
-        <!-- CTA -->
-        <div class="mt-6">
-            <a href="#" class="block bg-[#FFD700] hover:bg-red-500 text-black text-center font-semibold py-3 px-6 rounded-md transition">
-                Read Full Report
-            </a>
-        </div>
+       <!-- CTA -->
+<div class="mt-6">
+    <a href="market-insights.html" class="block bg-[#FFD700] hover:bg-red-500 text-black text-center font-semibold py-3 px-6 rounded-md transition">
+        Read Full Report
+    </a>
+</div>
+
     </div>
     </section>
 
@@ -316,7 +327,7 @@
     <!-- Overlay to Reduce Background Opacity -->
     <div class="absolute inset-0 bg-black bg-opacity-30"></div> <!-- Adjusted to 30% opacity -->
 
-    <!-- Contact Form Card (Now More Opaque) -->
+    <!-- Contact Form Card -->
     <div class="w-full max-w-lg bg-white bg-opacity-100 p-8 rounded-lg shadow-lg mt-12 relative z-10">  
         <h2 class="text-2xl font-bold text-blue-900 text-center">Send Us a Message</h2>
         <form action="#" method="POST" class="mt-4">
@@ -421,9 +432,7 @@
                 <img src="Assets/Vanguard Wealth Markets logo.webp" alt="Vanguard Wealth Markets Logo" class="w-10 h-10 object-contain">
                 <h2 class="text-lg text-[#FFD700] font-bold">Vanguard Wealth Markets</h2>
             </div>
-            <!-- Subtitle -->
-            <p class="text-gray-400 text-center md:text-left">
-                Your trusted partner in financial growth and security.
+               <p> Your trusted partner in financial growth and security.
             </p>
         </div>
 
@@ -453,20 +462,18 @@
             </div>
 <!-- Social Media -->
 <div class="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4">
-    <a href="https://www.facebook.com/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+    <h3 class="font-bold text-blue-500">Follow us</h3>
+    <a href="https://www.facebook.com/vanguardmarkets" class="text-white hover:text-red-500">
         <i class="fab fa-facebook text-2xl"></i>facebook
     </a>
-    <a href="https://twitter.com/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+    <a href="https://twitter.com/vanguardmarkets" class="text-white hover:text-red-500">
         <i class="fab fa-twitter text-2xl"></i>twitter
     </a>
-    <a href="https://www.linkedin.com/company/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+    <a href="https://www.linkedin.com/company/vanguardmarkets" class="text-white hover:text-red-500">
         <i class="fab fa-linkedin text-2xl"></i>linkedin
     </a>
-    <a href="https://www.instagram.com/vanguardmarkets" class="text-gray-400 hover:text-red-500">
+    <a href="https://www.instagram.com/vanguardmarkets" class="text-white hover:text-red-500">
         <i class="fab fa-instagram text-2xl"></i>instagram
-    </a>
-    <a href="https://www.youtube.com/c/vanguardmarkets" class="text-gray-400 hover:text-red-500">
-        <i class="fab fa-youtube text-2xl"></i>youtube
     </a>
 </div>
 
