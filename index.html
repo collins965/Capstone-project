@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanguard Wealth Markets</title>
+
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -164,76 +166,80 @@
 </section>
 
 
-    <!-- Investment Plan Card -->
-    <section id="investment-plans" class="py-16 relative bg-gray-100">
-        <!-- Content -->
-        <div class="relative z-10 text-gray-900 p-8">
-            <h2 class="text-3xl text-[#FFD700] text-center font-bold">Investment Plans</h2>
-            <p class="mt-4">Explore strategic opportunities to grow your wealth with Vanguard Wealth Markets.</p>
+  <!-- Investment Plan Card -->
+<section id="investment-plans" class="py-16 bg-gray-300">
+    <div class="text-center text-gray-900">
+        <h2 class="text-3xl text-[#FFD700] font-bold">Investment Plans</h2>
+        <p class="mt-2 text-sm text-gray-700">Secure & High-Yield Investments for a Prosperous Future</p>
+    </div>
+
+    <!-- Investment Plan Details -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+
+        <!-- Plan 1: Fixed Income -->
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col items-center p-4">
+            <h3 class="text-lg font-bold text-blue-500">🔹 Fixed Income Plan</h3>
+            <p class="text-gray-700 mt-2 text-sm">
+                Designed for stability and guaranteed returns, offering a <strong>low-risk</strong>, steady ROI.
+            </p>
+            <ul class="mt-2 text-xs text-gray-600 list-disc pl-4">
+                <li>📈 Expected Return: 7% - 10%</li>
+                <li>⏳ Tenure: 1 - 5 Years</li>
+                <li>🛡️ Risk: Low</li>
+                <li>💰 Min Investment: $5,000</li>
+            </ul>
+            <img src="Assets/Fixedincomeplan.jpg" alt="Fixed Income" class="w-full h-32 object-cover rounded-lg mt-3">
         </div>
-            <p class="text-gray-700 text-lg mb-2">
-            <p class="text-sm mt-1">Secure & High-Yield Investments for a Prosperous Future</p>
+
+        <!-- Plan 2: Growth Fund -->
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col items-center p-4">
+            <h3 class="text-lg font-bold text-blue-500">🔹 Growth Fund Plan</h3>
+            <p class="text-gray-700 mt-2 text-sm">
+                Focused on long-term wealth growth with <strong>moderate risk</strong> and high potential returns.
+            </p>
+            <ul class="mt-2 text-xs text-gray-600 list-disc pl-4">
+                <li>📈 Expected Return: 12% - 18%</li>
+                <li>⏳ Tenure: 3 - 7 Years</li>
+                <li>🛡️ Risk: Moderate</li>
+                <li>💰 Min Investment: $10,000</li>
+            </ul>
+            <img src="Assets/grow fund.jpg" alt="Growth Fund" class="w-full h-32 object-cover rounded-lg mt-3">
         </div>
 
-        <!-- Investment Plan Details -->
-        <div class="p-6 space-y-6">
-            <!-- Plan 1: Fixed Income -->
-            <div class="border-b pb-4">
-                <h3 class="text-lg font-bold text-gray-900">🔹 Fixed Income Plan</h3>
-                <p class="text-gray-700 mt-2 text-sm">
-                    The Fixed Income Plan is designed for investors seeking stability and guaranteed returns. It offers a **low-risk**, steady return on investment with interest paid quarterly.
-                </p>
-                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: 7% - 10%</li>
-                    <li>⏳ Investment Tenure: 1 - 5 Years</li>
-                    <li>🛡️ Risk Level: Low</li>
-                    <li>💰 Minimum Investment: $5,000</li>
-                </ul>
-            </div>
-
-            <!-- Plan 2: Growth Fund -->
-            <div class="border-b pb-4">
-                <h3 class="text-lg font-bold text-gray-900">🔹 Growth Fund Plan</h3>
-                <p class="text-gray-700 mt-2 text-sm">
-                    The Growth Fund focuses on capital appreciation, making it ideal for investors looking for long-term wealth growth. This plan has **moderate risk** with high potential returns.
-                </p>
-                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: 12% - 18%</li>
-                    <li>⏳ Investment Tenure: 3 - 7 Years</li>
-                    <li>🛡️ Risk Level: Moderate</li>
-                    <li>💰 Minimum Investment: $10,000</li>
-                </ul>
-            </div>
-
-            <!-- Plan 3: High-Yield Market Fund -->
-            <div class="border-b pb-4">
-                <h3 class="text-lg font-bold text-gray-900">🔹 High-Yield Market Fund</h3>
-                <p class="text-gray-700 mt-2 text-sm">
-                    This plan is for investors with **high risk tolerance**, focusing on market-driven opportunities like stocks, commodities, and venture capital. Ideal for maximizing long-term gains.
-                </p>
-                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: 20% - 30%</li>
-                    <li>⏳ Investment Tenure: 5 - 10 Years</li>
-                    <li>🛡️ Risk Level: High</li>
-                    <li>💰 Minimum Investment: $25,000</li>
-                </ul>
-            </div>
-
-            <!-- Plan 4: Retirement Security Plan -->
-            <div>
-                <h3 class="text-lg font-bold text-gray-900">🔹 Retirement Security Plan</h3>
-                <p class="text-gray-700 mt-2 text-sm">
-                    Our **Retirement Security Plan** provides long-term security with strategic asset allocation, ensuring financial independence in later years. It is **low-risk** and offers stable returns.
-                </p>
-                <ul class="mt-2 text-sm text-gray-600 list-disc pl-4">
-                    <li>📈 Expected Annual Return: 6% - 9%</li>
-                    <li>⏳ Investment Tenure: 10+ Years</li>
-                    <li>🛡️ Risk Level: Low to Moderate</li>
-                    <li>💰 Minimum Investment: $3,000</li>
-                </ul>
-            </div>
+        <!-- Plan 3: High-Yield Market Fund -->
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col items-center p-4">
+            <h3 class="text-lg font-bold text-blue-500">🔹 High-Yield Market Fund</h3>
+            <p class="text-gray-700 mt-2 text-sm">
+                Designed for <strong>high-risk</strong> investors focused on market-driven opportunities.
+            </p>
+            <ul class="mt-2 text-xs text-gray-600 list-disc pl-4">
+                <li>📈 Expected Return: 20% - 30%</li>
+                <li>⏳ Tenure: 5 - 10 Years</li>
+                <li>🛡️ Risk: High</li>
+                <li>💰 Min Investment: $25,000</li>
+            </ul>
+            <img src="Assets/high yield market fund.jpg" alt="High-Yield Market Fund" class="w-full h-32 object-cover rounded-lg mt-3">
         </div>
-        </section>
+
+        <!-- Plan 4: Retirement Security Plan -->
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col items-center p-4">
+            <h3 class="text-lg font-bold text-blue-500">🔹 Retirement Security Plan</h3>
+            <p class="text-gray-700 mt-2 text-sm">
+                A <strong>low-risk</strong> plan for long-term security and financial independence.
+            </p>
+            <ul class="mt-2 text-xs text-gray-600 list-disc pl-4">
+                <li>📈 Expected Return: 6% - 9%</li>
+                <li>⏳ Tenure: 10+ Years</li>
+                <li>🛡️ Risk: Low to Moderate</li>
+                <li>💰 Min Investment: $3,000</li>
+            </ul>
+            <img src="Assets/Retirement.jpg" alt="Retirement Security Plan" class="w-full h-32 object-cover rounded-lg mt-3">
+        </div>
+
+    </div>
+</section>
+
+
 <!-- Call to Action -->
 <div class="bg-gray-800 p-6 text-center">
     <p class="text-white font-semibold text-sm">
@@ -246,31 +252,31 @@
 
     </div>
 
+<!-- Insights Cards Container -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 bg-gray-300 gap-6 px-4">
 
-    <!-- Market Insights Card -->
-    <section id="market-insights" class="py-16 relative bg-cover bg-center" >
-        <!-- Title & Date -->
-        <div class="flex justify-between items-center border-b pb-4">
-            <h2 class="text-xl md:text-2xl font-bold text-[#FFD700]">
-                Market Insights
-            </h2>
-            <span class="text-gray-500 text-sm">March 2025</span>
-        </div>
-
-        <!-- Featured Insights -->
-        <div class="mt-4">
-            <h3 class="text-lg md:text-xl font-semibold text-blue-600">
-                Market Performance & Economic Outlook
+    <!-- Card 1: Market Performance & Economic Outlook -->
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col items-center w-full md:w-auto">
+        <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-500">
+                🔹 Market Performance & Economic Outlook
             </h3>
-            <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-2">
-                Global financial markets continue to experience volatility amid ongoing economic uncertainty. The **S&P 500** has shown resilience, closing at 4,750 points, marking a **3.2% increase** in Q1. Meanwhile, the **Federal Reserve's stance on interest rates remains cautious**, with analysts predicting a potential rate cut in the latter half of the year.
+            <p class="text-gray-700 text-sm leading-relaxed mt-2">
+                Global financial markets continue to experience volatility amid ongoing economic uncertainty. 
+                The <strong>S&P 500</strong> has shown resilience, closing at 4,750 points, marking a 
+                <strong>3.2% increase</strong> in Q1. Meanwhile, the <strong>Federal Reserve's stance on 
+                interest rates remains cautious</strong>, with analysts predicting a potential rate cut 
+                in the latter half of the year.
             </p>
         </div>
+        <img src="Assets/Market Performance & Economic Outlook.jpg" alt="Market Performance" class="w-full h-40 object-cover rounded-b-xl">
+    </div>
 
-        <!-- Market Data -->
-        <div class="bg-gray-50 p-4 rounded-lg mt-4">
-            <h3 class="text-lg font-semibold text-gray-800">Key Market Metrics</h3>
-            <ul class="mt-2 space-y-2 text-gray-700">
+    <!-- Card 2: Key Market Metrics -->
+    <div class="bg-gray-50 shadow-lg rounded-xl overflow-hidden flex flex-col items-center w-full md:w-auto">
+        <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-500">🔹 Key Market Metrics</h3>
+            <ul class="mt-2 space-y-2 text-gray-700 text-sm">
                 <li><strong> S&P 500:</strong> 4,750 (+3.2% Q1 Growth)</li>
                 <li><strong> Fed Interest Rate:</strong> 5.25% (No Change Expected in Q2)</li>
                 <li><strong> Gold Prices:</strong> $2,050/oz (+5% YTD)</li>
@@ -278,26 +284,60 @@
                 <li><strong> Forex (USD/EUR):</strong> 1.08 (-0.5% MTD)</li>
             </ul>
         </div>
+        <img src="Assets/Key Market Metrics.jpg" alt="Market Metrics" class="w-full h-40 object-cover rounded-b-xl">
+    </div>
 
-        <!-- Investment Insights -->
-        <div class="mt-4">
-            <h3 class="text-lg md:text-xl font-semibold text-green-700">
-                Investment Strategies for 2025
+    <!-- Card 3: Investment Strategies -->
+    <div class="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col items-center w-full md:w-auto">
+        <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-500">
+                🔹 Investment Strategies for 2025
             </h3>
-            <p class="text-gray-700 text-sm md:text-base leading-relaxed mt-2">
-                As market conditions evolve, **Vanguard Wealth Markets** recommends a diversified investment approach. Fixed-income assets remain attractive, particularly in **government bonds** and **high-yield corporate bonds**. **Emerging market equities** continue to show potential, with China and India leading growth. Investors are advised to **monitor inflation trends** and consider **hedging strategies** against currency fluctuations.
+            <p class="text-gray-700 text-sm leading-relaxed mt-2">
+                As market conditions evolve, <strong>Vanguard Wealth Markets</strong> recommends a diversified 
+                investment approach. Fixed-income assets remain attractive, particularly in 
+                <strong>government bonds</strong> and <strong>high-yield corporate bonds</strong>. 
+                <strong>Emerging market equities</strong> continue to show potential, with China and India 
+                leading growth. Investors are advised to <strong>monitor inflation trends</strong> and consider 
+                <strong>hedging strategies</strong> against currency fluctuations.
             </p>
         </div>
+        <img src="Assets/Investment Strategies.jpg" alt="Investment Strategies" class="w-full h-40 object-cover rounded-b-xl">
+    </div>
 
-       <!-- CTA -->
-<div class="mt-6">
-    <a href="market-insights.html" class="block bg-[#FFD700] hover:bg-red-500 text-black text-center font-semibold py-3 px-6 rounded-md transition">
-        Read Full Report
-    </a>
+    <!-- Card 4: Global Market Trends -->
+    <div class="bg-gray-50 shadow-lg rounded-xl overflow-hidden flex flex-col items-center w-full md:w-auto">
+        <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-500">
+                🔹 Global Market Trends & Tech Revolution
+            </h3>
+            <p class="text-gray-700 text-sm leading-relaxed mt-2">
+                The global economy is experiencing significant shifts driven by technology, geopolitical 
+                changes, and evolving consumer behaviors. Notable trends include:
+            </p>
+            <ul class="mt-2 space-y-2 text-gray-700 text-sm">
+                <li>🚀 <strong>Tech Stocks:</strong> AI & cloud computing firms driving market gains.</li>
+                <li>🌍 <strong>Geopolitical Tensions:</strong> U.S.-China trade policies affecting global supply chains.</li>
+                <li>💰 <strong>Crypto Boom:</strong> Bitcoin surpasses $70,000 amid institutional adoption.</li>
+                <li>🔋 <strong>Green Energy Investments:</strong> Surge in EV stocks and renewable projects.</li>
+                <li>📉 <strong>Recession Warnings:</strong> Analysts debate potential economic slowdown.</li>
+            </ul>
+        </div>
+        <img src="Assets/global markets trends.jpg" alt="Global Market Trends" class="w-full h-40 object-cover rounded-b-xl">
+    </div>
+
 </div>
 
+
+
+    <!-- CTA Button (Centered & Well-Placed) -->
+    <div class="flex justify-center mt-8">
+        <a href="market-insights.html" class="bg-[#FFD700] hover:bg-red-500 text-black text-center font-semibold py-3 px-6 rounded-md transition">
+            Read Full Report
+        </a>
     </div>
-    </section>
+</section>
+
 
  <!-- Contact Info -->
 
@@ -347,80 +387,101 @@
     </div>
 </section>
 
-
-                <!-- Review 1 -->
-                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-700 italic">"Vanguard Wealth Markets has transformed my investment portfolio. I’ve seen real growth!"</p>
-                    <div class="mt-4 flex items-center space-x-3">
-                        <div>
-                            <p class="text-blue-700 font-semibold">Joseph Mwangi</p>
-                            <p class="text-sm text-gray-500">Nairobi, Kenya</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-700 italic">"A very professional team that truly understands the financial market. Highly recommended!"</p>
-                    <div class="mt-4 flex items-center space-x-3">
-                        <div>
-                            <p class="text-blue-700 font-semibold">Wanjiku Kamau</p>
-                            <p class="text-sm text-gray-500">Mombasa, Kenya</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-700 italic">"The best investment guidance I have received. I now have confidence in my financial future."</p>
-                    <div class="mt-4 flex items-center space-x-3">
-                        <div>
-                            <p class="text-blue-700 font-semibold">Brian Otieno</p>
-                            <p class="text-sm text-gray-500">Kisumu, Kenya</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 4 -->
-                <div class="swiper-slide bg-gray-50 p-6 rounded-lg shadow-md">
-                    <p class="text-gray-700 italic">"Vanguard Wealth Markets is the real deal. Honest, insightful, and excellent service!"</p>
-                    <div class="mt-4 flex items-center space-x-3">
-                        <div>
-                            <p class="text-blue-700 font-semibold">Akinyi Mutua</p>
-                            <p class="text-sm text-gray-500">Eldoret, Kenya</p>
-                        </div>
-                    </div>
-                </div>
-
+<!-- Review Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-gray-100">
+    
+    <!-- Review 1 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+        <p class="text-gray-700 italic">"Vanguard Wealth Markets has transformed my investment portfolio. I’ve seen real growth!"</p>
+        <!-- Star Rating -->
+        <div class="text-yellow-500 mt-2">★★★★★</div>
+        <div class="mt-4 flex items-center space-x-3">
+            <img src="Assets/Mwangi.jpg" alt="Joseph Mwangi" class="w-12 h-12 rounded-full object-cover">
+            <div>
+                <p class="text-blue-700 font-semibold">Joseph Mwangi</p>
+                <p class="text-sm text-gray-500">Nairobi, Kenya</p>
             </div>
-
-            <!-- Pagination & Navigation -->
-            <div class="swiper-pagination mt-4"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </div>
     </div>
 
-    <!-- SwiperJS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <!-- Review 2 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+        <p class="text-gray-700 italic">"Their financial guidance has been a game changer. My investments are growing consistently!"</p>
+        <!-- Star Rating -->
+        <div class="text-yellow-500 mt-2">★★★★☆</div>
+        <div class="mt-4 flex items-center space-x-3">
+            <img src="Assets/Wanjiku kamau.jpg" alt="Wanjiku Kamau" class="w-12 h-12 rounded-full object-cover">
+            <div>
+                <p class="text-blue-700 font-semibold">Wanjiku Kamau</p>
+                <p class="text-sm text-gray-500">Mombasa, Kenya</p>
+            </div>
+        </div>
+    </div>
 
+    <!-- Review 3 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+        <p class="text-gray-700 italic">"A highly professional team that truly understands wealth management. Highly recommended!"</p>
+        <!-- Star Rating -->
+        <div class="text-yellow-500 mt-2">★★★★★</div>
+        <div class="mt-4 flex items-center space-x-3">
+            <img src="Assets/brian otieno.jpg" alt="Brian Otieno" class="w-12 h-12 rounded-full object-cover">
+            <div>
+                <p class="text-blue-700 font-semibold">Brian Otieno</p>
+                <p class="text-sm text-gray-500">Kisumu, Kenya</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review 4 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+        <p class="text-gray-700 italic">"Investing with Vanguard Wealth Markets has been one of my best financial decisions."</p>
+        <!-- Star Rating -->
+        <div class="text-yellow-500 mt-2">★★★☆☆</div>
+        <div class="mt-4 flex items-center space-x-3">
+            <img src="Assets/Akinyi mutua.jpg" alt="Akinyi Mutua" class="w-12 h-12 rounded-full object-cover">
+            <div>
+                <p class="text-blue-700 font-semibold">Akinyi Mutua</p>
+                <p class="text-sm text-gray-500">Eldoret, Kenya</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review 5 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+        <p class="text-gray-700 italic">"Excellent service and great returns! I feel confident about my financial future now."</p>
+        <!-- Star Rating -->
+        <div class="text-yellow-500 mt-2">★★★★☆</div>
+        <div class="mt-4 flex items-center space-x-3">
+            <img src="Assets/kevin ndungu.jpg" alt="Kevin Ndung'u" class="w-12 h-12 rounded-full object-cover">
+            <div>
+                <p class="text-blue-700 font-semibold">Kevin Ndung'u</p>
+                <p class="text-sm text-gray-500">Nakuru, Kenya</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review 6 -->
+    <div class="bg-white p-4 rounded-lg shadow-md">
+        <p class="text-gray-700 italic">"They provide expert investment advice and personalized financial strategies!"</p>
+        <!-- Star Rating -->
+        <div class="text-yellow-500 mt-2">★★★★★</div>
+        <div class="mt-4 flex items-center space-x-3">
+            <img src="Assets/susan omolo.jpg" alt="Susan Omollo" class="w-12 h-12 rounded-full object-cover">
+            <div>
+                <p class="text-blue-700 font-semibold">Susan Omollo</p>
+                <p class="text-sm text-gray-500">Thika, Kenya</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Review Button -->
+<div class="text-center mt-6">
+    <a href="review-form.html" class="bg-[#FFD700] text-white px-6 py-2 rounded-lg shadow hover:bg-red-500 transition">
+        Leave a Review
+    </a>
+</div>
 
 <!-- Footer -->
 <footer class="relative bg-black text-white py-10 mt-10">
